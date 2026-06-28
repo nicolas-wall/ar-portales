@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#1a1a2e"/>
+
+  <!-- Grid pattern for tracking richness -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16213e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="url(#grid)"/>
+
+  <!-- Outer ring -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#e94560" stroke-width="4"/>
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#e94560" stroke-width="1.5" stroke-dasharray="8 4"/>
+
+  <!-- Compass lines -->
+  <line x1="200" y1="20" x2="200" y2="380" stroke="#0f3460" stroke-width="2"/>
+  <line x1="20" y1="200" x2="380" y2="200" stroke="#0f3460" stroke-width="2"/>
+  <line x1="74" y1="74" x2="326" y2="326" stroke="#0f3460" stroke-width="1"/>
+  <line x1="326" y1="74" x2="74" y2="326" stroke="#0f3460" stroke-width="1"/>
+
+  <!-- Concentric circles -->
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#0f3460" stroke-width="1.5"/>
+  <circle cx="200" cy="200" r="80" fill="none" stroke="#0f3460" stroke-width="1.5"/>
+  <circle cx="200" cy="200" r="40" fill="none" stroke="#e94560" stroke-width="2"/>
+
+  <!-- Corner triangles -->
+  <polygon points="40,40 90,40 40,90" fill="#e94560" opacity="0.7"/>
+  <polygon points="360,40 310,40 360,90" fill="#e94560" opacity="0.7"/>
+  <polygon points="40,360 90,360 40,310" fill="#e94560" opacity="0.7"/>
+  <polygon points="360,360 310,360 360,310" fill="#e94560" opacity="0.7"/>
+
+  <!-- Inner geometric pattern -->
+  <polygon points="200,110 260,170 240,255 160,255 140,170" fill="none" stroke="#e94560" stroke-width="2"/>
+  <polygon points="200,145 235,175 223,215 177,215 165,175" fill="#e94560" opacity="0.15"/>
+
+  <!-- Center dot -->
+  <circle cx="200" cy="200" r="12" fill="#e94560"/>
+  <circle cx="200" cy="200" r="6" fill="#fff"/>
+
+  <!-- Tick marks -->
+  <g stroke="#e94560" stroke-width="2">
+    <line x1="200" y1="22" x2="200" y2="36"/>
+    <line x1="200" y1="364" x2="200" y2="378"/>
+    <line x1="22" y1="200" x2="36" y2="200"/>
+    <line x1="364" y1="200" x2="378" y2="200"/>
+  </g>
+
+  <!-- Degree labels -->
+  <text x="200" y="14" text-anchor="middle" fill="#e94560" font-size="10" font-family="monospace">N</text>
+  <text x="200" y="396" text-anchor="middle" fill="#e94560" font-size="10" font-family="monospace">S</text>
+  <text x="8" y="204" text-anchor="middle" fill="#e94560" font-size="10" font-family="monospace">W</text>
+  <text x="394" y="204" text-anchor="middle" fill="#e94560" font-size="10" font-family="monospace">E</text>
+
+  <!-- Text label -->
+  <text x="200" y="340" text-anchor="middle" fill="#e94560" font-size="13" font-family="monospace" letter-spacing="3">PORTAL 01</text>
+</svg>
