@@ -22,6 +22,13 @@ async function startAR() {
     uiLoading: 'yes',
     uiScanning: 'yes',
     uiError: 'yes',
+    // One Euro filter — lower values = more smoothing (less jitter, tiny lag)
+    filterMinCF: 0.0001,
+    filterBeta: 0.001,
+    // Keep anchor visible for more frames before declaring it lost
+    missTolerance: 10,
+    // Require more frames of detection before snapping anchor into place
+    warmupTolerance: 5,
   });
 
   const { renderer, scene, camera } = mindarThree;
